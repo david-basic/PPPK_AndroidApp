@@ -13,7 +13,6 @@ import androidx.navigation.NavController
 import hr.algebra.pppkandroidapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
