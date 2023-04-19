@@ -14,6 +14,7 @@ abstract class PeopleDatabase : RoomDatabase() {
     companion object {
         @Volatile
         private var INSTANCE: PeopleDatabase? = null
+
         fun getInstance(context: Context) =
             INSTANCE ?: synchronized(PeopleDatabase::class.java) {
                 INSTANCE ?: buildDatabase(context).also { INSTANCE = it }
