@@ -11,8 +11,8 @@ data class Person(
     var firstName: String? = null,
     var lastName: String? = null,
     var picturePath: String? = null,
-    var birthDate: LocalDate = LocalDate.now()
-    // TODO: ovdje dodaj jos jedan atribut entitetu kada budes gotov sa default appom sa vjezbi
+    var birthDate: LocalDate = LocalDate.now(),
+    var title: String? = null
 ){
     override fun toString() = "$firstName $lastName"
 }
